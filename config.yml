@@ -1,4 +1,4 @@
-baseURL: "https://examplesite.com/"
+baseURL: "https://codingwithaglassofmilk.netlify.app"
 title: My blog
 paginate: 5
 theme: PaperMod
