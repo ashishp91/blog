@@ -1,5 +1,5 @@
-baseURL: "https://codingwithaglassofmilk.netlify.app"
-title: My blog
+baseURL: https://codingwithaglassofmilk.netlify.app
+title: Code With Me
 paginate: 5
 theme: PaperMod
 
@@ -21,7 +21,7 @@ params:
   keywords: [Blog, Portfolio, PaperMod]
   author: Ashish Gaur
   # author: ["Me", "You"] # multiple authors
-  images: ["<link or path of image for opengraph, twitter-cards>"]
+  images: ["logo.jpg"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
@@ -50,8 +50,6 @@ params:
 
   label:
     text: "Home"
-    icon: /apple-touch-icon.png
-    iconHeight: 35
 
   # profile-mode
   profileMode:
