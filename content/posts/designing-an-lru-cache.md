@@ -29,19 +29,19 @@ A cache supports following operations:
 
 Inserts an element into the cache. If the cache is full then the *Least Recently Used* item is deleted to make space for the new item.
 
-![Insert Op](/lru-cache/insert.png)
+![Insert Op](/designing-a-lru-cache/insert.png)
 
 #### 2. Get(item)
 
 Retrieves an item from the cache. The accessed item becomes the most recently used item.
 
-![Get Op](/lru-cache/get.png)
+![Get Op](/designing-a-lru-cache/get.png)
 
 #### 3. Delete(item)
 
 Deletes an item from the cache.
 
-![Delete Op](/lru-cache/delete.png)
+![Delete Op](/designing-a-lru-cache/delete.png)
 
 Since we're implementing a cache these operations must run in constant(O(1)) time. Now how to achieve that ?
 
@@ -59,7 +59,7 @@ If we observe insert carefully we can see that it's is similar to a *Queue*.
 
 On insertion item is added to the rear(most recently used). If the memory is full one item is dequeued from the front(least recently used) to make space for the new item.
 
-![Queue](/lru-cache/queue.png)
+![Queue](/designing-a-lru-cache/queue.png)
 
 Queue solves insert(item) in O(1). Next let's see get(item).
 
@@ -74,7 +74,7 @@ We need to access an item in O(1) time. What data structure can do that ? Yes, *
 
 Using *HashMap* we can access any item in O(1) time.
 
-![HashMap](/lru-cache/hash-map.png)
+![HashMap](/designing-a-lru-cache/hash-map.png)
 
 However, did this solve the problem ? We can access any item in O(1) time but is get(item) O(1) ?
 The answer is No.
@@ -90,7 +90,7 @@ For the 2. step we'll need to move the item to the rear. This will take O(N) tim
 
 Right now queue is represented as an array. Shifting the accessed item will require O(N) time to shift the elements.
 
-![HashMap](/lru-cache/queue-array.png)
+![HashMap](/designing-a-lru-cache/queue-array.png)
 
 How can we reduce time to O(1) ?
 
@@ -104,7 +104,7 @@ What if we use *Doubly Linked List*. Will that help ?
 
 > Doubly Linked List requires O(1) to shift any item. This is because we only need to change the pointers of the item being accessed.
 
-![HashMap](/lru-cache/queue-dll.png)
+![HashMap](/designing-a-lru-cache/queue-dll.png)
 
 So now we've O(1) get(item) and insert(item). Let's see how much time del(item) takes ?
 
@@ -116,6 +116,6 @@ Using *Doubly Linked List* makes deleting an item O(1) since we only need to del
 
 Finally our cache looks like this
 
-![HashMap](/lru-cache/lru.png)
+![HashMap](/designing-a-lru-cache/lru.png)
 
 This LRU design performs insert(item), get(item) and delete(item) in O(1) time.
