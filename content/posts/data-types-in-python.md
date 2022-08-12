@@ -2,6 +2,7 @@
 title: "Data Types in Python"
 date: 2022-07-16T22:21:36+05:30
 draft: false
+tags: ["Python"]
 ---
 
 All programming languages have data types. In this post, we're going to talk about 6 data types of Python.

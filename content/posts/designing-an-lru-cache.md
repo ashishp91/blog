@@ -1,6 +1,7 @@
 ---
 title: "Designing an LRU Cache"
 date: 2022-05-09T19:17:45+05:30
+tags: ["Data Structures", "Algorithms"]
 draft: false
 ---
 

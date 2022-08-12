@@ -1,6 +1,7 @@
 ---
 title: "Dockerizing a Rails Application"
 date: 2022-05-21T13:57:49+05:30
+tags: ["Docker"]
 draft: false
 ---
 

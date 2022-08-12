@@ -2,6 +2,7 @@
 title: "What is ACID"
 date: 2022-06-14T14:07:12+05:30
 draft: false
+tags: ["Database"]
 ---
 
 ACID is the building blocks of a relational databases. Today we're going to understand what it means.
