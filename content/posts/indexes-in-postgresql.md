@@ -1,6 +1,7 @@
 ---
 title: "Indexes in Postgresql"
 date: 2022-06-24T22:21:57+05:30
+tags: ["Postgres", "Database"]
 draft: true
 ---
 
