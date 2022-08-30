@@ -1,6 +1,7 @@
 ---
 title: "Deploy ALB with ECS using Django"
 date: 2022-08-26T15:27:54+05:30
+tags: ["DevOps", "Django", "ALB", "ECS", "AWS"]
 draft: false
 ---
 
