@@ -2,6 +2,7 @@
 title: "DP - Min Cost Path"
 date: 2022-09-23T16:20:20+05:30
 draft: false
+tags: ["Dynamic Programming", "Algorithms"]
 ---
 
 ### Problem Statement
