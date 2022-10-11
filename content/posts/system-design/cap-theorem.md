@@ -58,7 +58,7 @@ When the network partition recovers, the two set of servers can share the number
 
 ### CP system - Bidding system
 
-*Scenario 1* - We've build a bidding system for auction of valuable items. Your team is responsible to handle biddings from various auctions around the globe. To make that possible you've servers across Americas, Asia and Europe that can log bids for an auction. Here's how your system looks like:
+*Scenario 2* - We've build a bidding system for auction of valuable items. Your team is responsible to handle biddings from various auctions around the globe. To make that possible you've servers across Americas, Asia and Europe that can log bids for an auction. Here's how your system looks like:
 
 ![Bidding System Example](/system-design/cap-theorem/bidding-system-example.png)
 
