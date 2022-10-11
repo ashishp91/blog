@@ -2,6 +2,7 @@
 title: "Memory Allocation in Java"
 date: 2022-10-10T22:06:14+05:30
 draft: false
+tags: ["Java"]
 ---
 
 A typical Java process deals with the RAM, Non RAM memory and Registers. It's useful to understand how a Java process accesses and manages these memories:

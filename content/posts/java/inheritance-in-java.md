@@ -2,6 +2,7 @@
 title: "Inheritance in Java"
 date: 2022-10-10T20:43:51+05:30
 draft: false
+tags: ["Java"]
 ---
 
 Inheritance is a mechanism through which a class can inherit properties(fields and methods) of another class. This allows to resuse the fields and methods of the parent class.
