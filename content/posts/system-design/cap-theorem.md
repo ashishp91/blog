@@ -46,9 +46,11 @@ During a live match the Asia servers gets partitioned from the rest of the syste
 
 Updates on the Asia servers are now not synced to Americas and Europe servers. What do you do to resolve this ?
 
-Looking at the business use case we can speculate that there is no need for watch count to be most up to date all the time. If the watch count is inconsistent for a period of time then it'll not do any harm.
+Looking at the business use case we can speculate that there is no need for watch count to be most up to date all the time. *If the watch count is inconsistent for a period of time it won't do any harm.*
 
-*This leads us to choose Availability over Consistency.* We'll allow watchers to be updated for Asia servers and the rest of the servers. This will cause the total watchers to be inconsistent but that's OK.
+**This leads us to choose Availability over Consistency.**
+
+We'll allow watchers to be updated for Asia servers and the rest of the servers. This will cause the total watchers to be inconsistent but that's OK.
 
 ![AP system](/system-design/cap-theorem/ap-system.png)
 
@@ -68,11 +70,15 @@ The initial bid for the item is 1 million. Bidders from each continent can bid a
 
 How will you resolve this ? Will you choose Availability or Consistency ?
 
-Let's say for the sake of argument we choose Availability. In that case the bidders in Asia can also bid. Somebody in Asia bids 3 Million, this gets updated in Asia servers but not to the rest of the network. Europe and Americas bidder still see 1 Million. Now a European bidder bids 2 Million. The system allows this update, but hold on is this correct ?
+Let's say for the sake of argument *we choose Availability*.
+
+In that case the bidders in Asia can also bid. Somebody in Asia bids 3 Million, this gets updated in Asia servers but not to the rest of the network. Europe and Americas bidder still see 1 Million. Now a European bidder bids 2 Million. The system allows this update, but hold on is this correct ?
 
 ![Bidding System Inconsistent](/system-design/cap-theorem/bidding-system-inconsistent.png)
 
-There are two biddings now for the same item, Asia bidders see 3 Million while European and Americas bidders see 2 Million. The bidding for an item must always be one. This gives us the hint that the system must prioritize consistency.
+*There are two biddings now for the same item*, Asia bidders see 3 Million while European and Americas bidders see 2 Million. The bidding for an item must always be one.
+
+**This gives us the hint that the system must prioritize Consistency over Availability.**
 
 To ensure consistency we can stop bidding altogether across the globe. We could also stop bidding only in Asia and allow bidding in Europe and Americas however that depends on the business use case.
 
