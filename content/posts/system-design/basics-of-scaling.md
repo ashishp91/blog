@@ -2,6 +2,7 @@
 title: "Basics of Scaling"
 date: 2022-12-27T15:48:09+05:30
 draft: false
+tags: ["System Design", "Distributed Systems"]
 ---
 
 In this blog we'll learn the basics required to scale an application. Lets start with how does the architecture of a small application looks like.

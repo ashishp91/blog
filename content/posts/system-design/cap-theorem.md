@@ -2,6 +2,7 @@
 title: "CAP Theorem"
 date: 2022-10-11T19:53:48+05:30
 draft: false
+tags: ["System Design", "Distributed Systems"]
 ---
 
 When designing distributed systems it's important to know CAP(Consistency, Availability and Partition Tolerance) theorem in order to understand trade offs in designing different distributed systems.
