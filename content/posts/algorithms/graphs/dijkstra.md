@@ -2,7 +2,7 @@
 title: "Dijkstra - Single Source Shortest Path"
 date: 2022-10-15T21:46:23+05:30
 draft: false
-tags: ["Graphs", "Algorithms", "Greedy"]
+tags: ["Graphs", "Data Structures", "Algorithms", "Greedy"]
 ---
 
 Dijkstra is a Greedy algorithm to find the shortest path in a graph from a single source.

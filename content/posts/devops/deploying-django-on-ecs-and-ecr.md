@@ -1,7 +1,7 @@
 ---
 title: "Deploying Django on ECS and ECR"
 date: 2022-08-18T12:04:53+05:30
-tags: ["Django", "ECS", "ECR", "AWS"]
+tags: ["Django", "DevOps", "ECS", "ECR", "AWS"]
 draft: false
 ---
 

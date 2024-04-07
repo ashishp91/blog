@@ -2,7 +2,7 @@
 title: "Minimum Spanning Tree"
 date: 2022-10-26T19:58:38+05:30
 draft: false
-tags: ["Graphs", "Algorithms", "MST"]
+tags: ["Graphs", "Data Structures", "Algorithms", "MST"]
 ---
 
 A minimum spanning tree(MST) is a subset of a graph which connects all the vertices with minimum total edge weight and least number of edges(no cycles).

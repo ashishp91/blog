@@ -2,7 +2,7 @@
 title: "O(V+E) Complexity in DFS and BFS of a Graph"
 date: 2022-10-22T16:15:19+05:30
 draft: false
-tags: ["Graphs", "Algorithms"]
+tags: ["Graphs", "Data Structures", "Algorithms"]
 ---
 
 The Time Complexity for DFS and BFS is O(V+E). We all know that. But what does V+E is actually mean ? Ever noticed Dijkstra also has this V+E in its time complexity = O((V+E)logV). Ever wondered why ?

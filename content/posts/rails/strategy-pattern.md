@@ -2,7 +2,7 @@
 title: "Strategy Pattern"
 date: 2023-10-14T18:37:05+05:30
 draft: false
-tags: ["Ruby"]
+tags: ["Ruby", "Rails"]
 ---
 
 Strategy pattern is a behavioral pattern which is used when there is a need to choose an algorithm on runtime. It's a very good example of open/closed principle.

@@ -2,7 +2,7 @@
 title: "Concerns in Rails"
 date: 2023-08-06T17:37:13+05:30
 draft: false
-tags: ["Ruby"]
+tags: ["Ruby", "Rails"]
 ---
 
 > Concerns allow us to include modules with methods (both instance and class) and constants into a class so that the including class can use them.

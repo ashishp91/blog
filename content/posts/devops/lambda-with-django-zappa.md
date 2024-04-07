@@ -1,7 +1,7 @@
 ---
 title: "Lambda With Django Zappa"
 date: 2022-09-04T22:08:13+05:30
-tags: ["AWS", "Lambda","API Gateway","S3"]
+tags: ["AWS", "DevOps", "Lambda","API Gateway","S3"]
 draft: false
 ---
 

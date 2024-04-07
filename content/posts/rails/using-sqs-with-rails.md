@@ -1,7 +1,7 @@
 ---
 title: "Using SQS With Rails"
 date: 2022-08-21T17:07:33+05:30
-tags: ["DevOps", "Rails", "SQS", "AWS"]
+tags: ["Ruby", "DevOps", "Rails", "SQS", "AWS"]
 draft: false
 ---
 

@@ -2,7 +2,7 @@
 title: "Binary Search Tree"
 date: 2022-10-05T15:44:57+05:30
 draft: false
-tags: ["Trees", "Data Structures"]
+tags: ["Trees", "Data Structures", "Algorithms"]
 ---
 
 A Binary Search Tree or a BST is a tree whose inorder traversal is sorted. For each node in a BST the left subtree has values smaller the node's value and the right subtree has values greater than the node's value.
