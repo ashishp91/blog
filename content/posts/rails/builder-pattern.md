@@ -2,6 +2,7 @@
 title: "Builder Pattern"
 date: 2023-10-08T12:06:19+05:30
 draft: false
+tags: ["Ruby"]
 ---
 
 ### What is Builder pattern ?
