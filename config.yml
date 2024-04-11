@@ -1,9 +1,13 @@
 baseURL: https://codingwithaglassofmilk.netlify.app
+languageCode: en
 title: Code With Me
 paginate: 5
 theme: PaperMod
 
+enableInlineShortcodes: true
+enableEmoji: true # allowing using emoji
 enableRobotsTXT: true
+
 buildDrafts: false
 buildFuture: false
 buildExpired: false
@@ -13,6 +17,12 @@ googleAnalytics: UA-123-45
 minify:
   disableXML: true
   minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -142,9 +152,3 @@ markup:
     # guessSyntax: true
     # lineNos: true
     # style: monokai
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON # necessary for search
