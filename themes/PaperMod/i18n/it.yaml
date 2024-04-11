@@ -1,30 +1,19 @@
 - id: prev_page
-  translation: "Precedente"
+  translation: "Pag Prec"
 
 - id: next_page
-  translation: "Successivo"
+  translation: "Pag Succ"
 
 - id: read_time
   translation:
     one: "1 minuto"
     other: "{{ .Count }} minuti"
 
-- id: words
-  translation:
-    one : "parola"
-    other: "{{ .Count }} parole"
-
 - id: toc
-  translation: "Indice contenuti"
+  translation: "Tabella dei Contenuti"
 
 - id: translations
   translation: "Traduzioni"
-
-- id: home
-  translation: "Home"
-
-- id: edit_post
-  translation: "Modifica"
 
 - id: code_copy
   translation: "copia"

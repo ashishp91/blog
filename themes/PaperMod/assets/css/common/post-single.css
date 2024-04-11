@@ -72,8 +72,6 @@
 .post-content a,
 .toc a:hover {
     box-shadow: 0 1px 0;
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
 }
 
 .post-content a code {
@@ -83,7 +81,8 @@
 }
 
 .post-content del {
-    text-decoration: line-through;
+    text-decoration: none;
+    background: linear-gradient(to right, var(--primary) 100%, transparent 0) 0 50%/1px 1px repeat-x;
 }
 
 .post-content dl,
@@ -130,18 +129,19 @@
 }
 
 .post-content table {
-    margin-bottom: var(--content-gap);
+    margin-bottom: 32px;
 }
 
 .post-content table th,
 .post-content table:not(.highlighttable, .highlight table, .gist .highlight) td {
     min-width: 80px;
-    padding: 8px 5px;
+    padding: 12px 8px;
     line-height: 1.5;
     border-bottom: 1px solid var(--border);
 }
 
 .post-content table th {
+    font-size: 14px;
     text-align: start;
 }
 
@@ -153,11 +153,11 @@
     border-radius: var(--radius);
 }
 
-.post-content .highlight:not(table) {
+.post-content .highlight:not(table),
+.post-content pre {
     margin: 10px auto;
-    background: var(--code-block-bg) !important;
+    background: var(--hljs-bg) !important;
     border-radius: var(--radius);
-    direction: ltr;
 }
 
 .post-content li > .highlight {
@@ -189,6 +189,10 @@
     margin-bottom: 0;
 }
 
+.post-content .highlighttable td .highlight pre code::-webkit-scrollbar {
+    display: none;
+}
+
 .post-content code {
     margin: auto 4px;
     padding: 4px 6px;
@@ -199,12 +203,12 @@
 }
 
 .post-content pre code {
-    display: grid;
+    display: block;
     margin: auto 0;
     padding: 10px;
     color: rgb(213, 213, 214);
-    background: var(--code-block-bg) !important;
-    border-radius: var(--radius);
+    background: 0 0;
+    border-radius: 0;
     overflow-x: auto;
     word-break: break-all;
 }
@@ -219,7 +223,8 @@
     margin: 30px 0;
     height: 2px;
     background: var(--tertiary);
-    border: 0;
+    border-top: 0;
+    border-bottom: 0;
 }
 
 .post-content iframe {
@@ -295,18 +300,10 @@
     margin-top: 56px;
 }
 
-.post-footer>* {
-    margin-bottom: 10px;
-}
-
-.post-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
 .post-tags li {
     display: inline-block;
+    margin-inline-end: 3px;
+    margin-bottom: 5px;
 }
 
 .post-tags a,
@@ -319,7 +316,8 @@
 
 .post-tags a {
     display: block;
-    padding: 0 14px;
+    padding-inline-start: 14px;
+    padding-inline-end: 14px;
     color: var(--secondary);
     font-size: 14px;
     line-height: 34px;
@@ -332,20 +330,30 @@
 }
 
 .share-buttons {
-    padding: 10px;
+    margin: 14px 0;
+    padding-inline-start: var(--radius);
     display: flex;
     justify-content: center;
     overflow-x: auto;
-    gap: 10px;
 }
 
-.share-buttons li,
 .share-buttons a {
-    display: inline-flex;
+    margin-top: 10px;
 }
 
 .share-buttons a:not(:last-of-type) {
     margin-inline-end: 12px;
+}
+
+.share-buttons a svg {
+    height: 30px;
+    width: 30px;
+    fill: currentColor;
+    transition: transform 0.1s;
+}
+
+.share-buttons svg:active {
+    transform: scale(0.96);
 }
 
 h1:hover .anchor,
@@ -361,9 +369,33 @@ h6:hover .anchor {
     user-select: none;
 }
 
+.post-content :not(table) ::-webkit-scrollbar-thumb {
+    border: 2px solid var(--hljs-bg);
+    background: rgb(113, 113, 117);
+}
+
+.post-content :not(table) ::-webkit-scrollbar-thumb:hover {
+    background: rgb(163, 163, 165);
+}
+
+.gist table::-webkit-scrollbar-thumb {
+    border: 2px solid rgb(255, 255, 255);
+    background: rgb(173, 173, 173);
+}
+
+.gist table::-webkit-scrollbar-thumb:hover {
+    background: rgb(112, 112, 112);
+}
+
+.post-content table::-webkit-scrollbar-thumb {
+    border-width: 2px;
+}
+
 .paginav {
+    margin: 10px 0;
     display: flex;
     line-height: 30px;
+    border-radius: var(--radius);
 }
 
 .paginav a {
@@ -395,13 +427,4 @@ h6:hover .anchor {
 
 [dir="rtl"] .paginav .next {
     text-align: left;
-}
-
-h1>a>svg {
-    display: inline;
-}
-
-img.in-text {
-    display: inline;
-    margin: auto;
 }
