@@ -1,5 +1,4 @@
 baseURL: https://codingwithaglassofmilk.netlify.app
-languageCode: en
 title: Code With Me
 paginate: 5
 theme: PaperMod
@@ -130,10 +129,10 @@ menu:
     #   name: categories
     #   url: /categories/
     #   weight: 10
-    - identifier: search-tags
-      name: Search Tags
-      url: search
-      weight: 5
+    # - identifier: search-tags
+    #   name: Search Tags
+    #   url: /search/
+    #   weight: 5
     - identifier: all-tags
       name: All Tags
       url: /tags/
