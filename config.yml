@@ -31,6 +31,9 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
   comments: false
@@ -50,6 +53,8 @@ params:
 
   label:
     text: "Home"
+    # icon: /apple-touch-icon.png
+    # iconHeight: 35
 
   # profile-mode
   profileMode:
@@ -76,8 +81,8 @@ params:
       url: "https://github.com/ashish91"
     - name: stackoverflow
       url: "https://stackoverflow.com/users/2555580/ashish-gaur"
-    - name: twitter
-      url: "https://twitter.com/snyder_91"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/ashish-gaur-ab158360"
 
   analytics:
     google:
@@ -106,6 +111,7 @@ params:
     distance: 1000
     threshold: 0.4
     minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
@@ -122,11 +128,18 @@ menu:
     #   url: https://example.org
     #   weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
-# pygmentsUseClasses: true
-# markup:
-#     highlight:
-#         # anchorLineNos: true
-#         codeFences: true
-#         guessSyntax: true
-#         lineNos: true
-#         style: monokai
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
