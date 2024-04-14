@@ -1,5 +1,5 @@
 ---
-title: "Active Record Single Table Inheritance"
+title: "Single Table Inheritance"
 date: 2024-04-12T09:24:02+05:30
 draft: false
 tags: ["Ruby", "Rails", "ActiveRecord"]

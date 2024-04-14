@@ -1,5 +1,5 @@
 ---
-title: "Active Record Eager Loading"
+title: "Eager Loading"
 date: 2024-04-11T11:16:36+05:30
 draft: false
 tags: ["Ruby", "Rails", "ActiveRecord"]

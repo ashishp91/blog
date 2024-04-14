@@ -1,5 +1,5 @@
 ---
-title: "Active Record Polymorphic Associations"
+title: "Polymorphic Associations"
 date: 2024-04-12T08:24:33+05:30
 draft: false
 tags: ["Ruby", "Rails", "ActiveRecord"]
