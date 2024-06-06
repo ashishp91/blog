@@ -3,3 +3,19 @@ This is just a placeholder blank stylesheet so as to support adding custom style
 
 Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
 */
+
+img[alt="resize_70"] {
+    max-width: 70%;
+    height: auto;
+}
+
+img[alt="resize_60"] {
+    max-width: 60%;
+    height: auto;
+}
+
+img[alt="resize_50"] {
+    max-width: 50%;
+    height: auto;
+}
+
