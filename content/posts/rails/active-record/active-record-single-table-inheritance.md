@@ -7,7 +7,7 @@ tags: ["Ruby", "Rails", "ActiveRecord"]
 
 ## What is Single Table Inheritance ?
 
->Single Table Inheritance is a mechanism through which ActiveRecord can share fields and behavior between different models.
+>Single Table Inheritance is a mechanism through which ActiveRecord can share fields and behavior between different models while using a single table.
 
 For eg. let's say we need to create a `Vehicle` model and `Car` model. Since `Vehicle` and `Car` will have common attributes and methods we can use `Single Table Inheritance` on them.
 ___
