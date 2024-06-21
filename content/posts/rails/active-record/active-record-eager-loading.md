@@ -7,13 +7,13 @@ tags: ["Ruby", "Rails", "ActiveRecord"]
 
 ### What is Eager Loading ?
 
-Eager loading is a mechanism through which ActiveRecord loads the associated records of an ActiveRecord object in memory, reducing the number of executed sql queries.
+> Eager loading is a mechanism through which ActiveRecord loads the associated records in memory, reducing the number of executed sql queries.
 
-There are 3 ways to do eager loading in ActiveRecord:
+There are following ways to do eager loading in ActiveRecord:
 
-- includes
-- preload
-- eager_load
+1. includes
+2. preload
+3. eager_load
 
 ### Why do we need Eager Loading ?
 
