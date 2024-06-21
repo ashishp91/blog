@@ -2,6 +2,7 @@
 title: "Setting Up Devise With Rails 7"
 date: 2024-06-06T10:24:29+05:30
 draft: false
+tags: ["Ruby", "Rails", "Devise"]
 ---
 
 In this blog we're going to look at how to setup `devise` gem with `rails 7` using `importmaps`. If you want to just setup `devise` without knowing the nitty gritty follow `tldr;` otherwise scroll past it for the full blog.
