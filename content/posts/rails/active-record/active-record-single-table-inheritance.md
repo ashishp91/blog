@@ -10,6 +10,10 @@ tags: ["Ruby", "Rails", "ActiveRecord"]
 >Single Table Inheritance is a mechanism through which ActiveRecord can share fields and behavior between different models while using a single table.
 
 For eg. let's say we need to create a `Vehicle` model and `Car` model. Since `Vehicle` and `Car` will have common attributes and methods we can use `Single Table Inheritance` on them.
+
+The schema of our example will look like this:
+
+![single-table-inheritance-example](/active-record-polymorphic-associations/single-table-inheritance-example.jpg)
 ___
 
 ### 1. Creating Vehicle and Car model for Single Table Inheritance
@@ -57,7 +61,11 @@ select * from vehicles;
 ```
 ### 3. Extending the concept to another model
 
-Just like we did above, we can create a `Bus` model and set its parent as the `Vehicle` class. Lets also insert a new record for the `Bus` model in the `vehicles` table:
+Just like we did above, we can create a `Bus` model and set its parent as the `Vehicle` class. Our schema will look like this:
+
+![single-table-inheritance-example](/active-record-polymorphic-associations/single-table-inheritance-another-example.png)
+
+Lets insert a new record for the `Bus` model in the `vehicles` table:
 
 ```ruby
 rails generate model bus --parent=Vehicle
