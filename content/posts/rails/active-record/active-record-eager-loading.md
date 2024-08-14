@@ -109,8 +109,13 @@ Friesen
 Williamson
 ```
 
-Here we're using 2 queries - 1 query for loading the books and another one to load the author association.
-`preload` requires M+1 queries where the ActiveRecord object has to load M associations. For eg. if our `books` example required to load `authors` and `reviews` then it'd take 2+1=3 queries with `preload`, here is how it looks like:
+Here we're using 2 queries
+- 1st query is for loading the books records
+- 2nd query is to load the associated author records
+
+> `preload` requires M+1 queries where the ActiveRecord object has to load M associations.
+
+For eg. if our `books` example required to load `authors` and `reviews` then it'd take 2+1=3 queries with `preload`, here is how it looks like:
 
 ```ruby
 books = Book.preload(:author, :reviews).limit(10)
