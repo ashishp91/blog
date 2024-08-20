@@ -2,6 +2,7 @@
 title: "Shallow vs Deep Nested Resources in Rails"
 date: 2024-08-16T18:39:43+05:30
 draft: false
+tags: ["Ruby", "Rails"  ]
 ---
 
 In Rails, in order to create routes we've define resources. Resources provide a mapping between an http verb with its URL and a controller action. For eg. to create routes for `posts` we've to add following to our routes.rb:
