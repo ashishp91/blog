@@ -1,5 +1,5 @@
 ---
-title: "Strategy Pattern"
+title: "Strategy Pattern in Ruby"
 date: 2023-10-14T18:37:05+05:30
 draft: false
 tags: ["Ruby", "Rails"]

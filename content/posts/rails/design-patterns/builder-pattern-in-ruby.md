@@ -1,5 +1,5 @@
 ---
-title: "Builder Pattern"
+title: "Builder Pattern in Ruby"
 date: 2023-10-08T12:06:19+05:30
 draft: false
 tags: ["Ruby", "Rails"]
