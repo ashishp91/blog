@@ -1,6 +1,6 @@
 baseURL: https://codingwithaglassofmilk.netlify.app
 title: Code With Me
-paginate: 5
+# paginate: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
@@ -87,7 +87,7 @@ params:
 
   socialIcons:
     - name: github
-      url: "https://github.com/ashish91"
+      url: "https://github.com/ashishp91"
     - name: stackoverflow
       url: "https://stackoverflow.com/users/2555580/ashish-gaur"
     - name: linkedin
